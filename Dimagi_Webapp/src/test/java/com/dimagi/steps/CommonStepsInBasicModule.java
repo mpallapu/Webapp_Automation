@@ -55,7 +55,7 @@ public class CommonStepsInBasicModule extends Base{
 			Thread.sleep(5000);
 			selectProject.selectapplication();
 			String LeftPanelTitle = selectProject.verifyLeftPanelText();
-			Thread.sleep(4000);
+			Thread.sleep(5000);//test
 			String ActualLeftPanelTitle ="Cloudcare";
 			Assert.assertEquals(LeftPanelTitle, ActualLeftPanelTitle);
 			
