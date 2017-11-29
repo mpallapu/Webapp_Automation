@@ -35,6 +35,9 @@ public class SelectAProject_Obj extends Base{
 	@CacheLookup
 	private WebElement LeftPanelAppTitle;
 	
+	@FindBy(xpath="//a[contains(text(),'Web Apps')]")
+	private WebElement SelectWebapps;
+	
 	public SelectAProject_Obj()
 	{
 		PageFactory.initElements(driver,this);
@@ -63,6 +66,9 @@ public class SelectAProject_Obj extends Base{
 
     	String LeftPanelTitle = LeftPanelAppTitle.getText();
     	return LeftPanelTitle;
+    }
+    public void selectapplication1(){
+    	SelectWebapps.click();
     }
     
 	}

@@ -19,6 +19,9 @@ public class SignInPage_Obj extends Base{
 	@FindBy(how = How.ID, using = "id_auth-password")
 	private WebElement Password;
 	
+	@FindBy(id="abc")
+	private WebElement LoginButton;
+	
 	@FindBy(how = How.XPATH, using = "//*[text()=('Sign In') and @type='submit']")
 	private WebElement SignIn_BTN;
 	
@@ -34,6 +37,8 @@ public class SignInPage_Obj extends Base{
 	public void clickOnSignInLink()
 	{
 		SignIn_lnk.click();
+		
+		
 	}
 	
 	public void enterUsername(String username)
@@ -53,7 +58,6 @@ public class SignInPage_Obj extends Base{
 	public String readWelcomeText()
 	{
 		String Welcometext = WelcomeNote.getText();
-		System.out.println(Welcometext);
 		return Welcometext;
 	}
 }
