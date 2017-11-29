@@ -26,9 +26,6 @@ public class SignInPage_Obj extends Base{
 	private WebElement WelcomeNote;
 	
 	
-	@FindBy(how = How.XPATH, using = "//div[@class='page-header']/h1")
-	private WebElement WelcomeNote1;//test
-	
 	public SignInPage_Obj()
 	{
 		PageFactory.initElements(driver, this);
