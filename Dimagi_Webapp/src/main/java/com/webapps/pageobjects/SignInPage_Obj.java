@@ -25,6 +25,10 @@ public class SignInPage_Obj extends Base{
 	@FindBy(how = How.XPATH, using = "//div[@id='hq-messages-container']/following::div[2]/h1")
 	private WebElement WelcomeNote;
 	
+	
+	@FindBy(how = How.XPATH, using = "//div[@class='page-header']/h1")
+	private WebElement WelcomeNote1;
+	
 	public SignInPage_Obj()
 	{
 		PageFactory.initElements(driver, this);
