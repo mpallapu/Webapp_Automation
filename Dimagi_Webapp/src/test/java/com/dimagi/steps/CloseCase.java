@@ -8,11 +8,9 @@ import cucumber.api.java.en.Then;
 
 public class CloseCase extends Base{
 
-	//This is test comment
-	//this is second test comment
 	Hook hook = new Hook();
 	WebApp_Obj WebApplications2 = new WebApp_Obj();
-	
+		
 	@And("^Click on Close case$")
 	public void click_on_Close_case() throws Throwable {
 		Thread.sleep(3000);
@@ -22,7 +20,7 @@ public class CloseCase extends Base{
 	@Then("^Verify user is automatically navigated to Home screen form$")
 	public void verify_user_is_automatically_navigated_to_Home_screen_form() throws Throwable {
 	    String ActualTitleForCloseCase=WebApplications2.ReadTitleForCloseCase();
-	    ActualTitleForCloseCase.equals("HOME SCREEN");
+	    ActualTitleForCloseCase.equals("HOME SCREEN");//home screen
 	}
 
 
