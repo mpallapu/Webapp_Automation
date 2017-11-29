@@ -23,7 +23,7 @@ public class SignInPage_Obj extends Base{
 	private WebElement SignIn_BTN;
 	
 	@FindBy(how = How.XPATH, using = "//div[@id='hq-messages-container']/following::div[2]/h1")
-	private WebElement WelcomeNote;
+	private WebElement WelcomeNote; // test
 	
 	
 	public SignInPage_Obj()
