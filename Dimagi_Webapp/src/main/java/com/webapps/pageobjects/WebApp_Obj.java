@@ -22,7 +22,7 @@ public class WebApp_Obj extends Base{
 		PageFactory.initElements(driver, this);
 	}
 	public String checkwebappsText(){
-		
+		////checkwebappsText
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 		WebElement siteTitle = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//*[contains(text(), 'Applications')])[1]")));
 		  String webappsWelcomeText = siteTitle.getText();
