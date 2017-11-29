@@ -26,6 +26,8 @@ public class WebApp_Obj extends Base{
 		////checkwebappsText2...!!!!!!!!
 		////checkwebappsText3...!!!!!!!!
 		WebDriverWait wait = new WebDriverWait(driver, 30);
+		
+	////checkwebappsText comment
 		WebElement siteTitle = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//*[contains(text(), 'Applications')])[1]")));
 		  String webappsWelcomeText = siteTitle.getText();
 		  return webappsWelcomeText;
