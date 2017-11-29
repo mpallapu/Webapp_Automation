@@ -27,7 +27,7 @@ public class SignInPage_Obj extends Base{
 	
 	
 	@FindBy(how = How.XPATH, using = "//div[@class='page-header']/h1")
-	private WebElement WelcomeNote1;
+	private WebElement WelcomeNote1;//test
 	
 	public SignInPage_Obj()
 	{
