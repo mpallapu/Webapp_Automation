@@ -8,7 +8,7 @@ import cucumber.api.java.en.Then;
 
 public class CloseCase extends Base{
 
-	
+	//This is test comment
 	Hook hook = new Hook();
 	WebApp_Obj WebApplications2 = new WebApp_Obj();
 	
