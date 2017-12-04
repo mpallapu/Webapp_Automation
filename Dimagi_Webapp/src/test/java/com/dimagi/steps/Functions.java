@@ -10,8 +10,6 @@ import cucumber.api.java.en.Then;
 
 public class Functions extends Base{
 
-
-	
 	Hook hook = new Hook();
 	WebApp_Obj WebApplications2 = new WebApp_Obj();
 	
@@ -20,7 +18,6 @@ public class Functions extends Base{
 	Thread.sleep(5000);
      WebApplications2.ClickOnFunctions();
  } 
-
 	
 @And("^Enter any value otherthan (\\d+) in first question$")
 public void enter_any_value_otherthan_in_first_question(int arg1) throws Throwable {
@@ -55,6 +52,5 @@ public void verify_the_text() throws Throwable {
   
 	String actualText=WebApplications2.VerifyTextForQues2();
 	assertTrue(actualText.endsWith("14"));
-   
-}
+   }
 }

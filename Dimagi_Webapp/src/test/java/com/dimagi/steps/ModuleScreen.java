@@ -7,8 +7,7 @@ import cucumber.api.java.en.And;
 public class ModuleScreen extends Base{
 	Hook hook = new Hook();
 	WebApp_Obj WebApplications2 = new WebApp_Obj();
-	
-	
+		
 	@And("^Click on ModuleScreen$")
 	public void click_on_ModuleScreen() throws Throwable {
 		Thread.sleep(3000);

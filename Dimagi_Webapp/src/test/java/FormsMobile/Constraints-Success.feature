@@ -1,4 +1,6 @@
+@regression
 Feature: Verify Constraints Success  scenario by mobile user
+
 Scenario: Verify Constraints Success  scenario by mobile user
 
 Given Mobile user Signup page

@@ -214,6 +214,9 @@ public class WebApp_Obj extends Base{
 		
 		@FindBy(xpath="//*[@class='title']")
 		private WebElement TitleForClosecase;
+		
+		@FindBy(xpath="//*[@class='submit btn btn-primary']")
+		private WebElement Formsubmit;
 
 	public WebApp_Obj()
 	{
@@ -226,15 +229,6 @@ public class WebApp_Obj extends Base{
 		  return webappsWelcomeText;
 	}	
 	
-//	public String checkwebappsText(){
-//		WebDriverWait wait = new WebDriverWait(driver, 30); 
-//		 WebElement siteTitle = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//*[contains(text(), 'Applications')])[1]")));  
-//		  String webappsWelcomeText = siteTitle.getText();    
-//		return webappsWelcomeText;
-//		//String webappsWelcomeText = WebappsWelcomeText.getText();
-//	    // return webappsWelcomeText;
-//}
-
        
 		public void ClickOnCloudcare() {
 			
@@ -330,8 +324,7 @@ public class WebApp_Obj extends Base{
 			return ErrorMessage;
 		}
 		
-		
-		
+				
 		public void EnterFirstQuestion(String text){
 			FirstQuestion.sendKeys(text);
 			
@@ -479,7 +472,10 @@ public class WebApp_Obj extends Base{
 		public String ReadTitleForCloseCase(){
 			String TitleCloseCase=TitleForClosecase.getText();
 			return TitleCloseCase;
-		}		
+		}	
+		public void ClickOnFormsubmit(){
+			Formsubmit.click();
+		}
 //	public void clickOnCloudcare(){
 //	WebDriverWait wait = new WebDriverWait(driver, 30);
 //    	WebElement cloudcareicon = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h3[text()='Cloudcare']")));

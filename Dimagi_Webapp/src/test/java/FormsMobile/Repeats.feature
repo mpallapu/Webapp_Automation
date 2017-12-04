@@ -1,4 +1,6 @@
+@regression
 Feature: Verify Repeats foem scenario by mobile user
+
 Scenario: Verify Repeats foem scenario by mobile user
 
 Given Mobile user Signup page

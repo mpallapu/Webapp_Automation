@@ -1,4 +1,6 @@
+@regression
 Feature: Verify Previousscreen form scenario by mobile user
+
 Scenario: Verify Previousscreen form scenario by mobile user
 
 Given Signup page for Mobile user

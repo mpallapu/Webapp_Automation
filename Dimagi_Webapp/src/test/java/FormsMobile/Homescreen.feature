@@ -1,4 +1,6 @@
+@regression
 Feature: Verify Homescreen form scenario by mobile user
+
 Scenario: Verify Homescreen form scenario by mobile user
 
 Given Signup page for Mobile user

@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
@@ -17,17 +16,14 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
-public class FormsIncomplete1 extends Base{
-	
-	
+public class FormsIncomplete extends Base{
 	
 	SignInPage_Obj signpage = new SignInPage_Obj();
 	WebApp_Obj WebApplications = new WebApp_Obj();
 	Hook hook = new Hook();
 	Reports Reportpage = new Reports();
 	String ExpectedText;
-	
-	
+		
 	@Given("^Mobile user Signup page$")
 	public void mobile_user_Signup_page() throws Throwable {
 	  
@@ -95,6 +91,11 @@ public void webuser_Signin() throws Throwable {
 	signpage.clickOnSignBTN();
 }
 
+@Given("^Click on Submit button$")
+public void click_on_Submit_button() throws Throwable {
+	WebApplications.ClickOnFormsubmit();
+}
+
 @Given("^Click on Reports dropdown$")
 public void click_on_Reports_dropdown() throws Throwable {
 	Reportpage.ClickOnReprotsDropdown();
@@ -149,8 +150,7 @@ public void verify_the_form_was_received() throws Throwable {
 	       {   	  
 	    	   stringNotMatched =false;
 	       		 break;
-	    	
-	       }
+	    	}
 	       
 	       driver.switchTo().window(windows.get(0));
 	       	
@@ -158,10 +158,7 @@ public void verify_the_form_was_received() throws Throwable {
     	
    	if(stringNotMatched){
 	   Assert.assertTrue(false);
-   	}
-	   
-
+   	} 
 }
-
 	
 }

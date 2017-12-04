@@ -1,5 +1,6 @@
-
+@regression
 Feature: Verify Fixtures form scenario by mobile user
+
 Scenario: Verify Fixtures form scenario by mobile user
 
 Given Mobile user Signup page

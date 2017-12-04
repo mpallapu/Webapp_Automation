@@ -1,4 +1,6 @@
+@regression
 Feature: Verify CurrentModule form scenario by mobile user
+
 Scenario: Verify CurrentModule form scenario by mobile user
 
 Given Signup page for Mobile user

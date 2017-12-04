@@ -1,4 +1,6 @@
+@regression
 Feature: Verify Modulescreen form scenario by mobile user
+
 Scenario: Verify ModuleScreen form scenario by mobile user
 
 Given Signup page for Mobile user

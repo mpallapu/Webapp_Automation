@@ -1,4 +1,6 @@
+@regression
 Feature: Verify functions scenario by mobile user
+
 Scenario: Verify functions scenario by mobile user
 
 Given Mobile user Signup page

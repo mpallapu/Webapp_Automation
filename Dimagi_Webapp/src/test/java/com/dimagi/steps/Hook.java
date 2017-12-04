@@ -29,22 +29,20 @@ public class Hook extends Base{
 		
 			if (browserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
-					"D://javaworkspace//chromedriver_win32.exe");
+					"D:\\javaworkspace\\chromedriver_win32\\chromedriver.exe");
 			driver = new ChromeDriver();
-			
-			
+						
 		} else if (browserName.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver",
 					"D:\\javaworkspace\\geckodriver\\geckodriver.exe");
 			driver = new FirefoxDriver();
 			
-
 		}
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		//driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
         //driver.get(prop.getProperty("url"));
-		//driver.manage().window().maximize();
+		driver.manage().window().maximize();
 
 	}
 

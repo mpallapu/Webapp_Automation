@@ -1,4 +1,6 @@
+@regression
 Feature: Verify incomplete form 2 scenario by mobile user
+
 Scenario: Verify incomplete form 2 scenario by mobile user
 
 Given Mobile user Signup page

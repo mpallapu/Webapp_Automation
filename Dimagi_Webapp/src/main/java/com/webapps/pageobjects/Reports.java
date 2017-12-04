@@ -39,8 +39,6 @@ public class Reports extends Base{
 	@FindBy(xpath="//div[@class='table-responsive']//tr[2]/td[2]/div")
 	private WebElement formData;
 
-
-
 public Reports() 
 {  
 	PageFactory.initElements(driver, this);

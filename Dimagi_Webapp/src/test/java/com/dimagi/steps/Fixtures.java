@@ -1,6 +1,5 @@
 package com.dimagi.steps;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
@@ -79,6 +78,4 @@ public class Fixtures extends Base{
 	public void select_a_city() throws Throwable {
 		WebApplications.ClickOnBillerica();
 	}
-
-	
-}
+	}

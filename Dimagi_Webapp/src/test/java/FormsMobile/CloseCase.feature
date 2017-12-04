@@ -1,4 +1,6 @@
+@regression
 Feature: Verify Close case  scenario by mobile user
+
 Scenario: Verify Close case  scenario by mobile user
 
 Given Signup page for Mobile user

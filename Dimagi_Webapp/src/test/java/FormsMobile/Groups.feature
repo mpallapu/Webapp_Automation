@@ -1,4 +1,6 @@
+@regression
 Feature: Verify Groups foem scenario by mobile user
+
 Scenario: Verify Groups foem scenario by mobile user
 
 Given Mobile user Signup page
